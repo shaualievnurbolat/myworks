@@ -11,8 +11,8 @@ body {
 }
 
 .container {
-    width: 1140px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .header {
@@ -29,6 +29,7 @@ body {
 }
 
 .header__menu {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,4 +73,16 @@ body {
     width: 270px;
     height: 200px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 940px) {
+    .works__wrapper {
+        grid-template-columns: repeat(2, 300px)
+    }
+}
+
+@media (max-width: 640px) {
+    .works__wrapper {
+        grid-template-columns: repeat(1, 300px)
+    }
 }
